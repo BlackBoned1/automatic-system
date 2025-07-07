@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Black Bond Jeans</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1593032457860-36f9f3aa1b2d?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    .hero button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 1em;
+      background: white;
+      color: black;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .product {
+      background: #1a1a1a;
+      padding: 20px;
+      width: 250px;
+      border-radius: 8px;
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .product h3 {
+      margin: 10px 0 5px;
+    }
+
+    .product p {
+      margin: 0;
+    }
+
+    .about, .contact {
+      background-color: #111;
+      border-top: 1px solid #333;
+    }
+
+    .instagram img {
+      width: 100px;
+      margin: 5px;
+      border-radius: 4px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      border-top: 1px solid #333;
+      font-size: 0.9em;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: white;
+      color: black;
+      margin-top: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Black Bond Jeans</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#instagram">Instagram</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Unleash Your Style in Raw Denim</h2>
+    <p>Premium jeans, designed for rebels.</p>
+    <button onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">Shop Now</button>
+  </section>
+
+  <section class="section" id="shop">
+    <h2>Featured Products</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1618354691310-0e1f7eaf827f?auto=format&fit=crop&w=800&q=80" alt="Slim Fit Jeans" />
+        <h3>Slim Fit Jeans</h3>
+        <p>₹1499</p>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1599940824396-6a9d7dba8aa9?auto=format&fit=crop&w=800&q=80" alt="Ripped Jeans" />
+        <h3>Ripped Streetwear</h3>
+        <p>₹1799</p>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1535916707207-35f97e715e2f?auto=format&fit=crop&w=800&q=80" alt="Black Stretch Jeans" />
+        <h3>Classic Black Stretch</h3>
+        <p>₹1399</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <h2>About Us</h2>
+    <p>Black Bond Jeans is born in New Delhi, built for those who walk their own path. We create premium denim for everyday rebels.</p>
+  </section>
+
+  <section class="section instagram" id="instagram">
+    <h2>Follow Us on Instagram</h2>
+    <p>@blackbondjeans</p>
+    <!-- You can use a plugin or API to pull live Instagram images -->
+    <img src="https://via.placeholder.com/100x100?text=Post+1" />
+    <img src="https://via.placeholder.com/100x100?text=Post+2" />
+    <img src="https://via.placeholder.com/100x100?text=Post+3" />
+    <a class="button" href="https://instagram.com/blackbondjeans" target="_blank">View Instagram</a>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Phone: 8383944008</p>
+    <p>📍 Location: Vishnu Garden, New Delhi</p>
+    <p>📧 Email: blackbondjeans@gmail.com (example)</p>
+  </section>
+
+  <footer>
+    © 2025 Black Bond Jeans | All Rights Reserved
+  </footer>
+
+</body>
+</html>
